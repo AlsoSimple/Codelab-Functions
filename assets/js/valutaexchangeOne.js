@@ -48,7 +48,6 @@ function makeExchange(myEuroRate, myDollarRate, myDanishAmount) {
 function showResult(myEuroResult, myDollarResult, myDanishAmount) {
     const resultElement = document.getElementById('result');
     resultElement.innerHTML = myDanishAmount + ' danske kroner bliver til: ' + myEuroResult + ' euro og ' + myDollarResult + ' dollars';
-
 }
 
 
@@ -57,4 +56,13 @@ function showResult(myEuroResult, myDollarResult, myDanishAmount) {
 
 //  funktion der returnerer en veksel udregning skal skrives her
 
+function calculateExchange(dkAmount, rate){
+    
+    console.log('dk ammount' + dkAmount);
+    console.log('rate' + rate)
 
+    let result = dkAmount * rate;
+
+    return result;
+
+}
